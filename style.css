@@ -1865,7 +1865,26 @@ section {
 
 @media (max-width: 768px) {
   .hud-bar {
-    padding: 1.2rem 2rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .hud-logo {
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  
+  .hud-logo-status {
+    display: none;
+  }
+  
+  .btn-quick-uplink {
+    display: none;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   
   .hud-nav-container {
@@ -1881,24 +1900,40 @@ section {
   }
   
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   
   .hero-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   
   .hero-cta-group {
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
   }
   
-  .btn-primary-glow, .btn-secondary-border {
-    padding: 0.9rem 1.8rem;
+  .btn-primary-glow, .btn-secondary-border, .btn-tertiary-link {
+    padding: 0.9rem 1.6rem;
     font-size: 0.8rem;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .portrait-avatar-wrapper {
+    width: 270px;
+    height: 320px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
   }
 }
